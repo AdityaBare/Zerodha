@@ -11,13 +11,14 @@ const BuyActionWindow = ({ uid }) => {
   const [stockPrice, setStockPrice] = useState(0.0);
 
   const handleBuyClick =   () => {
-     closeBuyWindow();
      axios.post(`${import.meta.env.VITE_Backend_URL}/newOrder`, {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
       mode: "BUY",
     });
+     closeBuyWindow();
+
 
   
   };

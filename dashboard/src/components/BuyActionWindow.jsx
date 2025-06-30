@@ -10,15 +10,16 @@ const BuyActionWindow = ({ uid }) => {
   const [stockQuantity, setStockQuantity] = useState(1);
   const [stockPrice, setStockPrice] = useState(0.0);
 
-  const handleBuyClick = async  () => {
-  await   axios.post(`${import.meta.env.VITE_Backend_URL}/newOrder`, {
+  const handleBuyClick =   () => {
+     closeBuyWindow();
+     axios.post(`${import.meta.env.VITE_Backend_URL}/newOrder`, {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
       mode: "BUY",
     });
 
-   GeneralContext.closeBuyWindow();
+  
   };
 
   const handleCancelClick = () => {
@@ -56,12 +57,12 @@ const BuyActionWindow = ({ uid }) => {
       <div className="buttons">
         <span>Margin required ₹140.65</span>
         <div>
-          <button className="btn btn-blue" onClick={handleBuyClick}>
+          <Link to='' className="btn btn-blue" onClick={handleBuyClick}>
             Buy
-          </button>
-          <button  className="btn btn-grey" onClick={handleCancelClick}>
+          </Link>
+          <Link  to='' className="btn btn-grey" onClick={handleCancelClick}>
             Cancel
-          </button>
+          </Link>
         </div>
       </div>
     </div>

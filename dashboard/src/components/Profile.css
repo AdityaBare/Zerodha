@@ -1,0 +1,62 @@
+.profile-dropdown {
+  background-color: white;
+  color: #524545;
+  width: 200px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+
+  margin-right: 15px;
+  display: block;
+  position: fixed;
+  top: 5rem;
+  right: 1rem;
+  padding: 20px;
+  border-radius: 10%;
+  border: 1px solid gray;
+  border-top-right-radius: 0%;
+  z-index: 1000;
+  
+}
+
+.icon-profile {
+  border-bottom: 1px solid rgb(96, 91, 91);
+}
+.icon p {
+  border: 2px solid silver;
+  width: 30%;
+  height: 10%;
+  text-align: center;
+  border-radius: 50%;
+  color: rgb(9, 117, 167);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 4rem;
+  margin: auto;
+  font-weight: 600;
+  background-color: silver;
+}
+.username p {
+  text-align: center;
+  font-size: large;
+}
+.ul {
+  list-style: none;
+}
+.li {
+  height: 2rem;
+  padding: 5px;
+  margin-bottom: 2px;
+  width: 100%;
+  margin: auto;
+  font-size: large;
+  margin-right: 10px;
+  position: relative;
+  right: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+.li:hover {
+  border: 1px solid silver;
+  background-color: whitesmoke;
+  height: 2rem;
+  padding: 5px;
+}

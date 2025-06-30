@@ -1,0 +1,28 @@
+ul li{
+    font-size:medium !important;
+     
+    margin-right: 1rem !important;
+   line-height: 1px;
+   /* margin-top: 0.4rem !important; */
+    
+    
+}
+.navbar{
+    background-color: white !important;
+    height: 5rem !important;
+  
+}
+li a:hover{
+    color:rgb(10, 153, 210) !important;
+}
+.nav-item {
+    font-size: large;
+    font-weight: 500;
+    
+    margin-right: 2.5rem !important;
+    
+}
+.navbar-brand{
+    margin-left: 5rem !important;
+
+}

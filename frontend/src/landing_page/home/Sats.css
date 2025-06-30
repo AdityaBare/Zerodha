@@ -1,0 +1,23 @@
+h4{
+    margin-top: 1.9rem;
+    font-size: 1.1rem;
+
+}
+p{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+img{
+    
+    width: 90%;
+}
+a{
+    text-decoration: none;
+}
+.ecoTag {
+    margin-left: 1.5rem;
+    display: inline;
+}
+h1{
+    margin-bottom: 4rem;
+}

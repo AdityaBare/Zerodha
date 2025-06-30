@@ -1,0 +1,41 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+
+  
+
+
+}
+*{
+  margin: 0;
+  color:rgb(112, 110, 110);
+  letter-spacing: 0.02em;
+}
+
+.footer{
+    background-color: whitesmoke;
+    width: 100vw !important;
+}
+.a{
+    text-decoration: none;
+    color: rgb(60, 53, 53);
+    margin-right: 1rem;
+     font-size: larger;
+}
+.footer img{
+    width: 50%;
+}
+.a:hover{
+  color:rgb(17, 119, 171);
+}
+.createTicket a{
+  display: block;
+  margin-top: 0.6rem;
+  padding-left: 8px;
+
+}
+.createTicket h4{
+  color: black;
+  /* font-size: small; */
+}

@@ -19,6 +19,17 @@ function Home() {
 //       window.location.replace(`${import.meta.env.VITE_Frontend_URL}`);
 //     });
 //   }, []);
+  useEffect(() => {
+    axios
+      .get(`${import.meta.env.VITE_Backend_URL}/user`, {
+        withCredentials: true,
+      })
+      .then((res) => {
+         console.log(res.data)
+
+         if(!res.data){return  window.location.replace(`${import.meta.env.VITE_Frontend_URL}`);}
+      });
+  }, []);
   
     return ( 
         <>
